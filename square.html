@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<script>
+    //4
+    //****
+    //****
+    //****
+    //****
+    function testRoop() {
+        //取得輸入框框的數字 
+        var squareSize = document.getElementById('square_size').value;
+        //宣告一個結果之後要顯示用的
+        var result = '';
+        //第一層迴圈 他主要是
+        for (var i = 0; i < squareSize; i++) {
+            for (var j = 0; j < squareSize; j++) {
+                result = result + '*';
+            }
+            result = result + '<br>';
+        }
+        git
+        document.getElementById('test').innerHTML = result;
+    }
+
+</script>
+
+<body>
+    <input type="number" id="square_size">
+
+    <button type="button" onclick="testRoop()">Click Me</button>
+
+    <p id="test">This is a paragraph.</p>
+
+</body>
+
+</html>
