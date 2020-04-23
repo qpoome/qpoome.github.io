@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<script>
+    //4
+    //****
+    //****
+    //****
+    //****
+    function testRoop() {
+        //取得輸入框框的數字 
+        var width = document.getElementById('width').value;
+        var hight = document.getElementById('hight').value;
+
+        var html = document.getElementById('test');
+        html.innerHTML = '';
+        //第一層迴圈 他主要是長直得
+        for (var i = 0; i < hight; i++) {
+            //第二層迴圈 他主要市長橫的
+            for (var j = 0; j < width; j++) {
+                html.innerHTML = html.innerHTML + 'i=' + i + '&nbsp;*&nbsp;' + 'j=' + j + '&nbsp;｜｜';
+            }
+            html.innerHTML = html.innerHTML + '<br>';
+        }
+
+        // document.getElementById('test').innerHTML = result;
+    }
+
+</script>
+
+<body>
+    <input type="number" id="hight" placeholder="這是高 控制 i">
+    <input type="number" id="width" placeholder="這是寬 控制 j">
+    <button type="button" onclick="testRoop()">別亂按</button>
+
+    <p id="test"></p>
+
+</body>
+
+</html>
